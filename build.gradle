@@ -1,0 +1,8 @@
+task printEnv << {
+  println System.env
+}
+
+task build {
+  dependsOn printEnv
+}
+
